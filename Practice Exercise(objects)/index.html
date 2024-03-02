@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Practice Exercise Objects</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        let myntra = {
+            item : 'T-Shirt',
+            Size: 'XL',
+            Price: 1000,
+            'Delivery-time': 'same day'
+        };console.log(myntra.Price);
+        console.log(myntra['Delivery-time']);
+
+        let Apple = {
+            Iphone: 140000,
+        };
+        let Ipad = Apple;
+        console.log( ` your Apple Iphone ${Apple.Iphone} And  Apple Ipad ${Ipad.Iphone}`);
+
+        Apple.Iphone = 100000;
+        console.log( ` your Apple Iphone ${Apple.Iphone} And  Apple Ipad ${Ipad.Iphone}`);
+
+        let workStatus = {
+            Worke: 'Complete',
+            Message: 'Good Job',
+        };
+        console.log(workStatus);
+        let {Worke,Message} = workStatus;
+        console.log(Message);
+        console.log(Worke);
+        
+
+        function isIdenticalProduct (myntra1,myntra2){
+
+            if (typeof myntra1 !== 'object' || typeof myntra2 !== 'object'){
+                
+                console.warn('Paramter is not an Object');
+                return false;
+        }
+
+            if (myntra1 == myntra2 ){
+                return true;
+            }
+
+            if (myntra1 === myntra2 &&
+             myntra1.item === myntra2.item &&
+              myntra1.Size === myntra2.Size &&
+              myntra1.Price === myntra2.Price){
+
+                return true;
+                
+            }else{
+             return false;
+            }
+
+        } let myntra1 = {
+            item : 'T-Shirt',
+            Size: 'X',
+            Price: 1000,
+            'Delivery-time': 'same day'
+        };
+
+        let myntra2 = {
+            item : 'T-Shirt',
+            Size: 'X',
+            Price: 1000,
+            'Delivery-time': 'same day'
+        };
+
+        let myntra3 = {
+            item : 'T-Shirt',
+            Size: 'Xxl',
+            Price: 1000,
+            'Delivery-time': 'same day'
+        };
+        console.log(isIdenticalProduct(myntra,''));
+        console.log(isIdenticalProduct(myntra3,myntra2));
+        console.log(isIdenticalProduct(myntra2,myntra2));
+        console.log(isIdenticalProduct(myntra,myntra2));
+        console.log(isIdenticalProduct(myntra1,myntra2));
+    </script>
+</body>
+</html>

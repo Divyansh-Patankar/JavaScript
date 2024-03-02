@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Exercise</title>
+</head>
+<body>
+  
+
+
+
+
+
+  <script>
+
+    let metroTicket = 500;
+    let gender = 'female';
+    let age = 65;
+    let discount;
+    if(age <= 5){
+      discount = (metroTicket - ((100/100) * metroTicket));
+    }else if (gender === 'female' || age <= 8){
+      discount = (metroTicket - ((50/100) * metroTicket));
+    }else if (age >= 65){
+      discount = (metroTicket - ((30/100) * metroTicket));
+    }else{
+      discount = metroTicket;
+    }
+    console.log( `your finale bill ${discount}`);
+  </script>
+</body>
+</html>

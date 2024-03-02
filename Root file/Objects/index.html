@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      /*let product = {
+
+      company : 'Banana',
+
+      price : 30,
+
+      item : 'fruit',
+
+    };*/
+      //console.log(product);
+      //console.log(product.company);
+      //console.log(product.item);
+      //console.log(product.price);
+
+      //product.company = 'Apple';
+      //console.log(product);
+
+      //console.log(product['company']);
+      //console.log(product['item']);
+      //console.log(product.price);
+
+      //delete product.company;
+      //console.log(product);
+
+      let product = {
+        company: "Banana",
+
+        price: 30,
+
+        item: "fruit",
+
+        displayPrice: function(){
+
+          console.log(`your Purchase Price of Fruit is ₹${product.price}`);
+
+        }
+      };product.displayPrice();
+
+
+      //AutoBoxing
+
+      console.log('This is Divyansh patankar'.length);
+      console.log('This is Divyansh'.replace('Divyansh', ' Divyansh Patankar The OG Coder'));
+
+
+      //Object References
+
+      let a = 2;
+      let b = a; 
+      console.log(a,b);
+      a = 4;
+      console.log(a,b);
+
+      //in obeject reference
+
+      let p ={numb: 5};
+      let q = p;
+      console.log(`p = ${p.numb} q = ${q.numb}`);
+      p.numb = 6;
+      console.log(`p = ${p.numb} q = ${q.numb}`);
+
+      let x = { numb: 6};
+      let y = {numb: 6};
+      console.log(x == y);
+      
+    </script>
+  </body>
+</html>

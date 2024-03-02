@@ -1,0 +1,23 @@
+.add-to-bag
+{
+  background-color: lightgreen;
+  border-radius: 8px;
+  padding: 5px 15px;
+  border: none;
+}
+.Wishlist
+{
+  border: 2px solid;
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+
+.sale
+{
+  background-color: lightgreen;
+  border-radius: 8px;
+  padding: 5px 15px;
+  border: none;
+}

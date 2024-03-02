@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truthy and Falsy values</title>
+</head>
+<body>
+  
+
+
+  <script>
+
+    let age = 0;
+    if (age){
+      console.log('you are Human');
+    } else { 
+      console.log('You are Not a Human');
+    }
+
+     age = null;
+    if (age){
+      console.log('you are Human');
+    } else { 
+      console.log('You are Not a Human');
+    }
+
+    age;
+    if (age){
+      console.log('you are Human');
+    } else { 
+      console.log('You are Not a Human');
+    }
+
+     age = 5/'Horses';
+    if (age){
+      console.log('you are Human');
+    } else { 
+      console.log('You are Not a Human');
+    }
+    //undefined, false, ""(empty string) are also Falsy values
+
+
+
+
+    
+    //Truthy any value which is not falsy are Truthy
+  </script>
+</body>
+</html>

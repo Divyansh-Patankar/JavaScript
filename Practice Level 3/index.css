@@ -1,0 +1,25 @@
+#button
+{
+  color: brown;
+  background-color: blueviolet;
+}
+.button2
+{
+  color: aqua;
+  background-color: darkorange;
+}
+.Add-to-bag
+{
+  background-color: lightgreen;
+  border-radius: 8px;
+  padding: 5px 15px;
+  border: none;
+}
+.WISHLIST
+{
+  border: 2px solid;
+  width: 130px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px 20px;
+}
