@@ -8,6 +8,29 @@
 <body>
     <script>
 
+        // let product = {
+        //     name: 'Apple',
+        //     price : 140000,
+        //     category : 'Smartphone',
+        //     rating: {
+        //         stars : 4.5,
+        //         reviews : 3000,
+        //     }
+        // };
+
+        // console.log(typeof product);
+        // console.log(product);
+
+        // let str = JSON.stringify(product);
+        
+        // console.log( typeof str);
+        // console.log(str);
+
+        // let newObject = JSON.parse(str);
+        // console.log(typeof newObject);
+        // console.log(newObject);
+
+
         let product = {
             name: 'Apple',
             price : 140000,
@@ -18,17 +41,12 @@
             }
         };
 
-        console.log(typeof product);
-        console.log(product);
+        //localStorage.setItem('Name','Divyansh Patankar');
+        //localStorage.getItem('Name');
 
-        let str = JSON.stringify(product);
-        
-        console.log( typeof str);
-        console.log(str);
+        localStorage.setItem('product', JSON.stringify(product));
+        console.log(localStorage.getItem('product',product));
 
-        let newObject = JSON.parse(str);
-        console.log(typeof newObject);
-        console.log(newObject);
         </script>
 </body>
 </html>
