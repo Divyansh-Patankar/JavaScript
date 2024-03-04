@@ -44,8 +44,15 @@
         //localStorage.setItem('Name','Divyansh Patankar');
         //localStorage.getItem('Name');
 
-        localStorage.setItem('product', JSON.stringify(product));
-        console.log(localStorage.getItem('product',product));
+        //localStorage.setItem('product', JSON.stringify(product));
+        //console.log(localStorage.getItem('product',));
+
+
+        let product2 = localStorage.getItem('product');
+        console.log(product2);
+
+        localStorage.removeItem('Name');
+        localStorage.clear();
 
         </script>
 </body>
