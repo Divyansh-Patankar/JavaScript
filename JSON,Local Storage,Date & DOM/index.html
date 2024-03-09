@@ -1,59 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date</title>
 </head>
 <body>
-    <script>
+  
 
-        // let product = {
-        //     name: 'Apple',
-        //     price : 140000,
-        //     category : 'Smartphone',
-        //     rating: {
-        //         stars : 4.5,
-        //         reviews : 3000,
-        //     }
-        // };
+  <script>
 
-        // console.log(typeof product);
-        // console.log(product);
-
-        // let str = JSON.stringify(product);
-        
-        // console.log( typeof str);
-        // console.log(str);
-
-        // let newObject = JSON.parse(str);
-        // console.log(typeof newObject);
-        // console.log(newObject);
-
-
-        let product = {
-            name: 'Apple',
-            price : 140000,
-            category : 'Smartphone',
-            rating: {
-                stars : 4.5,
-                reviews : 3000,
-            }
-        };
-
-        //localStorage.setItem('Name','Divyansh Patankar');
-        //localStorage.getItem('Name');
-
-        //localStorage.setItem('product', JSON.stringify(product));
-        //console.log(localStorage.getItem('product',));
-
-
-        let product2 = localStorage.getItem('product');
-        console.log(product2);
-
-        localStorage.removeItem('Name');
-        localStorage.clear();
-
-        </script>
+    let myDate = new Date();
+    console.log(myDate.getDate());
+    console.log(myDate.getFullYear());
+    console.log(myDate.getTime());
+    console.log(myDate.getMonth());
+    console.log(myDate.getDay());
+  </script>
 </body>
 </html>
