@@ -22,6 +22,7 @@
    let num2 = [1,null,undefined,2,5,false,true,{likes:10000}];
    console.log(num2[7]);
 
+   //Arrray Properties & Methods
 
    let num3 = [1,12,3,45,65,null,true,'Jay Shree Ram',14];
    console.log(Array.isArray(num3));
@@ -29,6 +30,43 @@
 
    let obj ={like: 69};
    console.log(Array.isArray(obj));
+
+   //Common Methods
+
+   let num4 = [1,12,3,45,65,null,true,'Jay Shree Ram',14];
+
+   //remove or add on last Array
+   num4.push(21);
+   console.log(num4);
+   num4.pop();
+   console.log(num4);
+
+   //remove or add on first Array
+
+   num4.shift();
+   console.log(num4);
+   num4.unshift(10);
+   console.log(num4);
+
+   //remove Array element from middle 
+
+   num4.splice(1,6);
+   console.log(num4);
+
+   //toString
+
+   let num5 = [2,3,4,23,2,5,6];
+   //console.log(num5.toString())
+
+   //sort
+
+   console.log(num5);
+   num5.sort();
+   console.log(num5);
+
+   //valueOf Make another Copy of Array
+   console.log(num5.valueOf());
+   
 
   </script>
 </body>
