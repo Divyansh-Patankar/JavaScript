@@ -3,83 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Array And Loop</title>
+  <title>Loop</title>
 </head>
 <body>
+  
   
 
   <script>
 
+    let num = 1; //initialization
 
-   let num = [1,2,3,6,
-      7,8,9,0];
+    while (num <=10){   //condition
+      console.log(num);
+      num++;    //updating
+    }
+    console.log('Final Number '+ num);
 
-   console.log(num);
-
-   //Postion -1 for selecting element
-   console.log(num[7]);
-
-   let num2 = [1,null,undefined,2,5,false,true,{likes:10000}];
-   console.log(num2[7]);
-
-   //Arrray Properties & Methods
-
-   let num3 = [1,12,3,45,65,null,true,'Jay Shree Ram',14];
-   console.log(Array.isArray(num3));
-   console.log(num3[7]); 
-
-   let obj ={like: 69};
-   console.log(Array.isArray(obj));
-
-   //Common Methods
-
-   let num4 = [1,12,3,45,65,null,true,'Jay Shree Ram',14];
-
-   //remove or add on last Array with Pull and pop
-   num4.push(21);
-   console.log(num4);
-   num4.pop();
-   console.log(num4);
-
-   //remove or add on first Array with shift and unshift
-
-   num4.shift();
-   console.log(num4);
-   num4.unshift(10);
-   console.log(num4);
-
-   //remove Array element from middle with splice
-
-   num4.splice(1,6);
-   console.log(num4);
-
-   //toString
-
-   let num5 = [2,3,4,23,2,5,6];
-
-   //console.log(num5.toString())
-
-   //sort for number or string ascending order
-
-   console.log(num5);
-   num5.sort();
-   console.log(num5);
-
-   //valueOf Make another Copy of Array
-
-   console.log(num5.valueOf());
-
-   //Arrays are also reference like objects
-
-   let num6 = num5;
-   num6[0] = 69;
-   console.log(num5);
-
-   //De-stucturing also works for Arrays.
-
-   let [a,b,c,d,e,f,g] = num5;
-   console.log(a + " " + b + ' ' + c + ' ' + d + ' ' + e + ' ' + f + ' ' + g);
-   
+    let x = 0;
+    while (x <= 1){
+      console.log(x);
+      x = Math.random() * 2;
+    }
+    console.log('Final number of x ' + x);
 
   </script>
 </body>
