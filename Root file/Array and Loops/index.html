@@ -80,6 +80,26 @@
       square.push (nums1[i] * nums1[i]);  //square[i] = nums1[i] * nums1 [i] 
 
     }console.log(`squares for all ${square}`);
+
+
+    // Break & Continue
+
+    let arr = [ 2,4,5,4,46,7,4];
+    for (let i = 0; i < arr.length; i++){
+      if (arr[i] === 46){
+        console.log(`here is Your Number ${i}`)
+        break;
+      }
+      console.log('Still Looking');
+    }
+
+    for (i = 0; i < 50; i++){
+      
+      console.log(i);
+      if (i === 34){
+        break;
+      };
+    }
   </script>
 </body>
 </html>
