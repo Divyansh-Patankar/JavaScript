@@ -94,11 +94,25 @@
     }
 
     for (i = 0; i < 50; i++){
-      
+
       console.log(i);
+
       if (i === 34){
         break;
       };
+    }
+
+
+    //continue
+
+    for (i = 1; i <= 50; i++){
+      if (i % 2 === 0){
+
+        continue;
+      
+      }
+      console.log(`This is Your Odd Number ${i}`);
+
     }
   </script>
 </body>
