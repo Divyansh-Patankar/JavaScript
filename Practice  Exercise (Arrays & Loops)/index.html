@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratice Exercise (Array & Loops)</title>
+</head>
+<body>
+  
+
+  <script>
+
+
+//Create an array of number [5,6] Add 4 at the beginning and 7 at the end of the array 
+
+let arr = [5,6]
+
+arr.push(7);
+
+
+arr.unshift(4);
+
+
+console.log(arr);
+
+// Create a method to return an element at a praticular position in the array
+
+function method (arry, position){
+
+  return arry[position -1];
+
+}
+let arry = [1,2,3,55,4,5,6,7,0,5,69]
+
+console.log(method(arry, 10));
+
+// Create an array copy using slice method 
+
+function arrCopy(arra){
+
+  return arra.slice(0,4);
+  
+};
+
+let arra = [4,5,6,7,4];
+
+console.log(arrCopy(arra));
+
+
+// Create a while loop that exits after counting 5 prime numbers
+
+
+
+//Modify the above loop to finish using break
+
+
+
+//using continue only print positive numbers from the given array [1,-6,5,7,-98]
+
+
+let nums = [1,-6,5,7,-98];
+
+for (i = 0; i < nums.length; i++){
+
+  if (i => 0){
+
+    console.log(nums)
+    continue;
+    
+  }
+}
+
+</script>
+</body>
+</html>
