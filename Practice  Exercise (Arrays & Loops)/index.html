@@ -38,7 +38,7 @@ console.log(method(arry, 10));
 
 function arrCopy(arra){
 
-  return arra.slice(0,4);
+  return arra.slice(0, arra.length);
   
 };
 
@@ -49,9 +49,49 @@ console.log(arrCopy(arra));
 
 // Create a while loop that exits after counting 5 prime numbers
 
+function isPrime (num){
 
+  for (i = 2; i < num; i++){
+
+    if (num % i === 0){
+
+      return false;
+
+    }
+
+  }return true;
+}
+
+let num = 2;
+let i = 0;
+
+while(true){
+
+  if (isPrime(num)){
+    console.log(num);
+    i++;
+    if(i >= 10){
+      break;
+    }
+  }
+  num++;
+
+};
 
 //Modify the above loop to finish using break
+
+
+
+// Create a for loop that prints number 1 to 10 in reverse order
+
+
+for (let i = 10; i > 0; i--){
+  console.log(i);
+};
+
+for (let i = 0; i < 10; i++){
+  console.log( 10 - i );
+}
 
 
 
@@ -62,13 +102,26 @@ let nums = [1,-6,5,7,-98];
 
 for (i = 0; i < nums.length; i++){
 
-  if (i => 0){
+  if (nums[i] < 0){
 
-    console.log(nums)
     continue;
-    
-  }
+
+  }console.log(nums[i]);
 }
+
+//using accumulator pattern concatenate all the strings in the given array ['KG','coding','JavaScript','Course','is','Best']
+
+let arre = ['KG','Coding','JavaScript','Course','is','Best'];
+
+let result = '';
+
+for (let i = 0; i < arre.length; i++){
+
+  result += arre[i] + ' ';
+
+}console.log(result);
+
+// console.log(arre.join(' '));
 
 </script>
 </body>
